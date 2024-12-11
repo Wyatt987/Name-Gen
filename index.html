@@ -23,7 +23,58 @@
         <header>
             <!-- place navbar here -->
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                <!--Intrustuctions-->
+                <div class="text-center mb-4">
+                    <h1>Fantasy Name Generator</h1>
+                    <p>Fill out the form below to generate your fantasy name!</p>
+                </div>
+                <!--Form Section-->
+                <form id="fantasyForm" class="mb-4">
+                    <!--Get First Name-->
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                    </div>
+                    <!--Get Last Name-->
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                    </div>
+                    <!--Get Favorite Color-->
+                    <div class="mb-3">
+                        <label for="favoriteColor" class="form-label">Favorite Color</label>
+                        <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
+                    </div>
+                    <!--Get Favorite Animal-->
+                    <div class="mb-3">
+                        <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
+                        <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal">
+                    </div>
+                    <!--Get roadType-->
+                    <div class="mb-3">
+                        <label for="roadType" class="form-label">Choose Road Type</label>
+                        <select id="roadType" class="form-select">
+                            <option selected>Select Road Type</option>
+                            <option value="road">Road</option>
+                            <option value="Circle">Circle</option>
+                            <option value="Street">Street</option>
+                            <option value="Court">Court</option>
+                            <option value="Drive">Drive</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <!--Submit Button-->
+                    <button type="submit" class="btn btn-primary w-100">Generate Name</button>
+                </form>
+                <!--Generate Name Output-->
+                <div class="result" id="result">
+                    
+                </div>
+            </div>
+
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
