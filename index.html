@@ -19,17 +19,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body class="bg-secondary">
         <header>
             <!-- place navbar here -->
         </header>
         <main>
             <div class="container">
                 <!--Intrustuctions-->
-                <div class="text-center mb-4">
+                <div class="text-center mb-4 mt-5">
                     <h1>Fantasy Name Generator</h1>
                     <p>Fill out the form below to generate your fantasy name!</p>
                 </div>
+                <hr>
                 <!--Form Section-->
                 <form id="fantasyForm" class="mb-4">
                     <!--Get First Name-->
@@ -66,11 +67,11 @@
                         </select>
                     </div>
                     <!--Submit Button-->
-                    <button type="submit" class="btn btn-primary w-100">Generate Name</button>
+                    <button type="submit" class="btn w-100 rounded" id="button5">Generate Name</button>
                 </form>
                 <!--Generate Name Output-->
                 <div class="result" id="result">
-                    
+
                 </div>
             </div>
 
