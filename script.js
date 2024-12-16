@@ -8,7 +8,7 @@ function genPrefix(firstName) {
 }
 
 //generate first name//
-function genFistName(firstName) {
+function genFirstName(firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase();
     if (firstLetter === "a") {
         return "Jeff";
@@ -39,13 +39,13 @@ function genLastName(lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1);
     if (lastLetter === "a") {
         return "Shadow";
-    } else if (firstLetter === "b") {
+    } else if (lastLetter === "b") {
         return "Storm";
-    } else if (firstLetter === "c") {
+    } else if (lastLetter === "c") {
         return "Blaze";
-    } else if (firstLetter === "d") {
+    } else if (lastLetter === "d") {
         return "Thorn";
-    } else if (firstLetter === "e") {
+    } else if (lastLetter === "e") {
         return "Frost";
     } else {
         return "Moon";
@@ -65,9 +65,9 @@ function genFullName() {
     const favoriteAnimal = document.getElementById('favoriteAnimal').value.trim()
     //Run Name Generating Functions & store them in new variables//
     const prefix = genPrefix(firstName)
-    const newFirstName = newFirstName(firstName)
-    const middleName = middleName(roadtype, favoriteColor)
-    const newLastName = newLastName(lastName)
+    const newFirstName = genFirstName(firstName)
+    const middleName = genMiddleName(roadType, favoriteColor)
+    const newLastName = genLastName(lastName)
     const suffix = genSuffix(favoriteAnimal)
 
     //Capitalize Name Variables when needed//
@@ -76,8 +76,10 @@ function genFullName() {
     const capitalizedMiddleName = capitalize(middleName)
     const capitalizedLastName = capitalize(newLastName)
     //Combine all of the Name variables in a new name//
-
+    const fullName = `${capitalizedPrefix} ${capitalizedFistName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
+    console.log(fullName)
     //Display he new name//
+    document.getElementById('result').textContent = fullName
 }
 //Capitalization function//
 function capitalize(input) {

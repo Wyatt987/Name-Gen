@@ -15,11 +15,11 @@
 
 @keyframes click-me {
     from { transform: scale(1); }
-    to { transform: scale(1.1); }
+    to { transform: scale(1.05); }
 }
 
 /* Hover*/
 #button5:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
-    transition: ease 0.3;
+    transition: ease-in-out 0.3;
 }
