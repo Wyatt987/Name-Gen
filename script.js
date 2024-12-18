@@ -1,21 +1,18 @@
 //Generate Prefix//
 function genPrefix(firstName) {
-    if (firstName.length > 5) {
-        return "The Great";
-    } else {
-        return "Master";
-    }
+    return (firstName.length > 5 || firstName.length <= 5) ? "The Great" : "Master";
 }
 
 //generate first name//
 function genFirstName(firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase();
-    if (firstLetter === "a") {
-        return "Jeff";
-    } else if (firstLetter === "b") {
-        return "Pablo";
-    } else {
-        return "Julian";
+    switch (firstLetter) {
+        case "a":
+            return "Jeff";
+        case "b":
+            return "Pablo";
+        default:
+            return "Julian";
     }
 }
 //Generate middle name//
@@ -52,9 +49,20 @@ function genLastName(lastName) {
     }
 }
 //generate Suffix//
-function genSuffix(favoriteAnimal) {
-    return `of the ${favoriteAnimal} clan.`
+
+function genSuffix(wizardHouse) {
+    if (wizardHouse === "courageAndBravery") {
+        return `of the Gryffindor house.`; 
+    } else if (wizardHouse === "ambitionAndCunning") {
+        return `of the Slytherin house.`; 
+    } else if (wizardHouse === "wisdomAndCreativity") {
+        return `of the Ravenclaw house.`; 
+    } else (wizardHouse === "loyaltyAndHardWork") {
+        return `of the Hufflepuff house.`; 
+    }
 }
+
+//Generate
 //Master Name Building Function//
 function genFullName() {
     //Get the Users Inputs from the HTML Elements//
@@ -62,13 +70,13 @@ function genFullName() {
     const lastName = document.getElementById('lastName').value.trim()
     const roadType = document.getElementById('roadType').value
     const favoriteColor = document.getElementById('favoriteColor').value.trim()
-    const favoriteAnimal = document.getElementById('favoriteAnimal').value.trim()
+    const wizardHouse = document.getElementById('wizardHouse').value.trim()
     //Run Name Generating Functions & store them in new variables//
     const prefix = genPrefix(firstName)
     const newFirstName = genFirstName(firstName)
     const middleName = genMiddleName(roadType, favoriteColor)
     const newLastName = genLastName(lastName)
-    const suffix = genSuffix(favoriteAnimal)
+    const suffix = genSuffix(wizardHouse)
 
     //Capitalize Name Variables when needed//
     const capitalizedPrefix = capitalize(prefix)

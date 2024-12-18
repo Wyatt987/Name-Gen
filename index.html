@@ -23,11 +23,10 @@
             <div class="container py-5">
                 <!-- Instructions -->
                 <div class="text-center mb-4">
-                    <h1 class="fw-bold">Create Your Fantasy Name!</h1>
+                    <h1 class="fw-bold">Create Your Wizarding Name!</h1>
                     <p>Fill out the form to generate a unique and magical name.</p>
                 </div>
                 <hr class="border-light">
-
                 <!-- Form Section -->
                 <form id="fantasyForm" class="mb-5 shadow-lg p-4 rounded bg-dark">
                     <div class="mb-3">
@@ -43,8 +42,14 @@
                         <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color" required>
                     </div>
                     <div class="mb-3">
-                        <label for="favoriteAnimal" class="form-label text-light">Favorite Animal</label>
-                        <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal" required>
+                        <label for="wizardHouse" class="form-label text-light">Trait Types</label>
+                        <select id="wizardHouse" class="form-select">
+                            <option selected>Select Your Traits</option>
+                            <option value="courageAndBravery">Courage and Bravery</option>
+                            <option value="ambitionAndCunning">Ambition and Cunning</option>
+                            <option value="wisdomAndCreativity">Wisdom and Creativity</option>
+                            <option value="loyaltyAndHardWork">Loyalty and Hard Work</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label for="roadType" class="form-label text-light">Choose Road Type</label>
