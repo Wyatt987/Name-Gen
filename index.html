@@ -6,18 +6,19 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Bootstrap CSS v5.3.2 -->
+        <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+
+        <!-- External CSS -->
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="bg-secondary text-light">
-
+    <body>
         <!-- Main Content -->
         <main>
             <div class="container py-5">
@@ -28,21 +29,26 @@
                 </div>
                 <hr class="border-light">
                 <!-- Form Section -->
-                <form id="fantasyForm" class="mb-5 shadow-lg p-4 rounded bg-dark bg-opacity-50">
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label text-light">First Name</label>
+                <form id="fantasyForm" class="mb-5 shadow-lg p-4 rounded">
+                    <div class="row">
+                        
+                   
+                    <div class="mb-3 col-6">
+                        <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label text-light">Last Name</label>
+                    <div class="mb-3 col-6">
+                        <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="favoriteColor" class="form-label text-light">Favorite Color</label>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-6">
+                        <label for="favoriteColor" class="form-label">Favorite Color</label>
                         <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="wizardHouse" class="form-label text-light">Trait Types</label>
+                    <div class="mb-3 col-6">
+                        <label for="wizardHouse" class="form-label">Trait Types</label>
                         <select id="wizardHouse" class="form-select">
                             <option selected>Select Your Traits</option>
                             <option value="courageAndBravery">Courage and Bravery</option>
@@ -51,15 +57,50 @@
                             <option value="loyaltyAndHardWork">Loyalty and Hard Work</option>
                         </select>
                     </div>
+                </div>
                     <div class="mb-3">
-                        <label for="roadType" class="form-label text-light">Choose Road Type</label>
+                        <label for="roadType" class="form-label">Choose Road Type</label>
                         <select id="roadType" class="form-select">
-                            <option selected>Select Road Type</option>
-                            <option value="road">Road</option>
-                            <option value="circle">Circle</option>
-                            <option value="street">Street</option>
-                            <option value="court">Court</option>
-                            <option value="drive">Drive</option>
+                            <option selected>Select Wood Type</option>
+                            <option value="acacia">Acacia</option>
+                            <option value="alder">Alder</option>
+                            <option value="apple">Apple</option>
+                            <option value="ash">Ash</option>
+                            <option value="aspen">Aspen</option>
+                            <option value="beech">Beech</option>
+                            <option value="blackthorn">Blackthorn</option>
+                            <option value="blackwalnut">Black Walnut</option>
+                            <option value="cedar">Cedar</option>
+                            <option value="cherry">Cherry</option>
+                            <option value="chestnut">Chestnut</option>
+                            <option value="cypress">Cypress</option>
+                            <option value="dogwood">Dogwood</option>
+                            <option value="ebony">Ebony</option>
+                            <option value="elder">Elder</option>
+                            <option value="elm">Elm</option>
+                            <option value="englishoak">English Oak</option>
+                            <option value="fir">Fir</option>
+                            <option value="hawthorn">Hawthorn</option>
+                            <option value="hazel">Hazel</option>
+                            <option value="holly">Holly</option>
+                            <option value="hornbeam">Hornbeam</option>
+                            <option value="larch">Larch</option>
+                            <option value="laurel">Laurel</option>
+                            <option value="mahogany">Mahogany</option>
+                            <option value="maple">Maple</option>
+                            <option value="pear">Pear</option>
+                            <option value="pine">Pine</option>
+                            <option value="poplar">Poplar</option>
+                            <option value="redoak">Red Oak</option>
+                            <option value="redwood">Redwood</option>
+                            <option value="rowan">Rowan</option>
+                            <option value="silverlime">Silver Lime</option>
+                            <option value="spruce">Spruce</option>
+                            <option value="sycamore">Sycamore</option>
+                            <option value="vine">Vine</option>
+                            <option value="walnut">Walnut</option>
+                            <option value="willow">Willow</option>
+                            <option value="yew">Yew</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
@@ -70,7 +111,7 @@
                 </form>
 
                 <!-- Output Result -->
-                <div id="result" class="result-container text-center py-4 mt-3 text-light rounded shadow-sm">
+                <div id="result" class="result-container text-center py-4 mt-3 rounded shadow-sm">
                     <h4 id="generatedName" class="m-0 fw-bold"></h4>
                 </div>
             </div>

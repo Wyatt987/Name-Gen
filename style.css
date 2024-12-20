@@ -1,56 +1,11 @@
-#button5 {
-    display: block;
-    margin: 20px auto;
-    padding: 15px 40px;
-    font-size: 1.5rem; 
-    font-weight: bold; 
-    color: #fff; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease;
-    animation: click-me 0.5s infinite alternate;
-    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
-
-}
-@keyframes click-me {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
-}
-
-/* Hover*/
-#button5:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
-    transition: ease-in-out 0.3;
-}
-/* result */
-.result-container {
-    min-height: 3rem;
-    font-size: 1.5rem;
-    border: 2px solid #ccc;
-}
-
-.result-container h4 {
-    color: #007bff;
-}
-/*Wand Background */
-
-#result {
-    background-image: url('imgs/wand.png');
-    background-repeat: no-repeat;
-    background-size: contain; 
-    background-position: center; 
-    background-color: transparent; 
-}
-
-/* Animation */
-
 body {
     animation: fadeIn 1s ease-in-out;
     background-image: url('imgs/hogwarts-bg.jpg');
     background-repeat: no-repeat;
-    background-size: contain; 
-    background-color: transparent; 
-    
+    background-size: cover;
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Georgia', serif;
 }
 
 @keyframes fadeIn {
@@ -61,5 +16,134 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+#fantasyForm {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#button5 {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    animation: click-me 0.5s infinite alternate;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+@keyframes click-me {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#button5:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: ease-in-out 0.3s;
+}
+
+.result-container {
+    min-height: 3rem;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: url('imgs/wand.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.result-container h4 {
+    color: #ffc107;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: #81d4fa;
+    font-weight: bold;
+}
+
+.text-box {
+    margin-left: 44vw;
+   margin-top: 42vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

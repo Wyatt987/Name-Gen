@@ -29,18 +29,86 @@ function genFirstName(firstName) {
 }
 //Generate middle name//
 function genMiddleName(roadType, favoriteColor) {
-    if (roadType === "road") {
+    if (roadType === "Acacia") {
         return `${favoriteColor}ridge`; //Ex: BlueRidge
-    } else if (roadType === "street") {
-        return `${favoriteColor}son`; // Ex: Redson
-    } else if (roadType === "circle") {
+    } else if (roadType === "alder") {
         return `${favoriteColor}land`; // Ex: Orangeland
-    } else if (roadType === "court") {
+    } else if (roadType === "apple") {
         return `${favoriteColor}tide`; // Ex: Bluetide
-    } else if (roadType === "drive") {
+    } else if (roadType === "ash") {
         return `${favoriteColor}hawk`; // Ex: Crimsonhawk
+    } else if (roadType === "aspen") {
+        return `${favoriteColor}wood`; // Ex: Greenwood
+    } else if (roadType === "beech") {
+        return `${favoriteColor}brook`; // Ex: Yellowbrook
+    } else if (roadType === "blackthorn") {
+        return `${favoriteColor}thorn`; // Ex: Pinkthorn
+    } else if (roadType === "blackwalnut") {
+        return `${favoriteColor}stone`; // Ex: Brownstone
+    } else if (roadType === "cedar") {
+        return `${favoriteColor}hill`; // Ex: Whitehill
+    } else if (roadType === "cherry") {
+        return `${favoriteColor}bloom`; // Ex: Redbloom
+    } else if (roadType === "chestnut") {
+        return `${favoriteColor}wood`; // Ex: Goldwood
+    } else if (roadType === "cypress") {
+        return `${favoriteColor}leaf`; // Ex: Blueleaf
+    } else if (roadType === "dogwood") {
+        return `${favoriteColor}tree`; // Ex: Pinktree
+    } else if (roadType === "ebony") {
+        return `${favoriteColor}shade`; // Ex: Blackshade
+    } else if (roadType === "elder") {
+        return `${favoriteColor}root`; // Ex: Silverroot
+    } else if (roadType === "elm") {
+        return `${favoriteColor}shade`; // Ex: Greenshade
+    } else if (roadType === "englishoak") {
+        return `${favoriteColor}oak`; // Ex: Blueoak
+    } else if (roadType === "fir") {
+        return `${favoriteColor}mist`; // Ex: Redmist
+    } else if (roadType === "hawthorn") {
+        return `${favoriteColor}thorn`; // Ex: Whitesthorn
+    } else if (roadType === "hazel") {
+        return `${favoriteColor}glade`; // Ex: Goldglade
+    } else if (roadType === "holly") {
+        return `${favoriteColor}berry`; // Ex: Redberry
+    } else if (roadType === "hornbeam") {
+        return `${favoriteColor}bend`; // Ex: Silverbend
+    } else if (roadType === "larch") {
+        return `${favoriteColor}wood`; // Ex: Yellowwood
+    } else if (roadType === "laurel") {
+        return `${favoriteColor}crest`; // Ex: Whitecrest
+    } else if (roadType === "mahogany") {
+        return `${favoriteColor}glow`; // Ex: Goldglow
+    } else if (roadType === "maple") {
+        return `${favoriteColor}leaf`; // Ex: Redleaf
+    } else if (roadType === "pear") {
+        return `${favoriteColor}blossom`; // Ex: Pinkblossom
+    } else if (roadType === "pine") {
+        return `${favoriteColor}cone`; // Ex: Greencone
+    } else if (roadType === "poplar") {
+        return `${favoriteColor}reach`; // Ex: Bluereach
+    } else if (roadType === "redoak") {
+        return `${favoriteColor}oak`; // Ex: Brownoak
+    } else if (roadType === "redwood") {
+        return `${favoriteColor}tree`; // Ex: Goldtree
+    } else if (roadType === "rowan") {
+        return `${favoriteColor}branch`; // Ex: Redbranch
+    } else if (roadType === "silverlime") {
+        return `${favoriteColor}glow`; // Ex: Whiteglow
+    } else if (roadType === "spruce") {
+        return `${favoriteColor}breeze`; // Ex: Bluebreeze
+    } else if (roadType === "sycamore") {
+        return `${favoriteColor}shade`; // Ex: Silvershade
+    } else if (roadType === "vine") {
+        return `${favoriteColor}vine`; // Ex: Greenvine
+    } else if (roadType === "walnut") {
+        return `${favoriteColor}grove`; // Ex: Browngrove
+    } else if (roadType === "willow") {
+        return `${favoriteColor}whisper`; // Ex: Silverwhisper
+    } else if (roadType === "yew") {
+        return `${favoriteColor}branch`; // Ex: Goldbranch
     } else {
-        return `${favoriteColor}stone`; //Ex: Bluestone
+        return `${favoriteColor}wood`; // Default Ex: Pinkwood
     }
 }
 //Generate Last Name//
