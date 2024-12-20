@@ -76,6 +76,7 @@ body {
     font-family: sans-serif;
     background-color: #81d4fa;
     font-weight: bold;
+    overflow: none;
 }
 
 .text-box {

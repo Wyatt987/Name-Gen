@@ -2,8 +2,13 @@
 function genPrefix(firstName) {
     return (firstName.length > 5 || firstName.includes("a")) ? "Professor" : "Lord";
 }
-
-
+//Prompt//
+window.onload = function() {
+    myFunction();
+};
+function myFunction() {
+    alert("Hi, in this website you will be able to generate your wizarding name by answering the following prompts! Are you ready to begin?");
+}
 //generate first name//
 function genFirstName(firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase();
