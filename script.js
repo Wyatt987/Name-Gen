@@ -1,18 +1,30 @@
 //Generate Prefix//
 function genPrefix(firstName) {
-    return (firstName.length > 5 || firstName.length <= 5) ? "The Great" : "Master";
+    return (firstName.length > 5 || firstName.includes("a")) ? "Professor" : "Lord";
 }
+
 
 //generate first name//
 function genFirstName(firstName) {
     const firstLetter = firstName.charAt(0).toLowerCase();
+    if (firstLetter === "d" && firstName.length === 2) {
+        return "Dumbledore";
+    }
     switch (firstLetter) {
-        case "a":
-            return "Jeff";
+        case "n":
+            return "Nevel";
         case "b":
-            return "Pablo";
+            return "Dudley";
+        case "c":
+            return "Harry";
+        case "d":
+            return "Draco";
+        case "h":
+            return "Hermione";
+        case "s":
+            return "Snape";
         default:
-            return "Julian";
+            return "Ron";
     }
 }
 //Generate middle name//
@@ -35,18 +47,57 @@ function genMiddleName(roadType, favoriteColor) {
 function genLastName(lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1);
     if (lastLetter === "a") {
-        return "Shadow";
+        return "Abbot";
     } else if (lastLetter === "b") {
-        return "Storm";
+        return "Avery";
     } else if (lastLetter === "c") {
-        return "Blaze";
+        return "Black";
     } else if (lastLetter === "d") {
-        return "Thorn";
+        return "Bulstrode";
     } else if (lastLetter === "e") {
-        return "Frost";
-    } else {
-        return "Moon";
-    }
+        return "Burke";
+    } else if (lastLetter === "f") {
+        return "Crouch";
+    } else if (lastLetter === "g") {
+        return "Fawley";
+    } else if (lastLetter === "h") {
+        return "Flint";
+    } else if (lastLetter === "i") {
+        return "Gaunt";
+    } else if (lastLetter === "j") {
+        return "Greengrass";
+    } else if (lastLetter === "k") {
+        return "Lestrange";
+    } else if (lastLetter === "l") {
+        return "Longbottom";
+    } else if (lastLetter === "m") {
+        return "Macmillan";
+    } else if (lastLetter === "n") {
+        return "Malfoy";
+    } else if (lastLetter === "o") {
+        return "Nott";
+    } else if (lastLetter === "p") {
+        return "Ollivander";
+    } else if (lastLetter === "q") {
+        return "Parkinson";
+    } else if (lastLetter === "r") {
+        return "Prewett";
+    } else if (lastLetter === "x") {
+        return "Rosier";
+    } else if (lastLetter === "t") {
+        return "Selwyn";
+    } else if (lastLetter === "u") {
+        return "Shacklebolt";
+    } else if (lastLetter === "v") {
+        return "Shafiq";
+    } else if (lastLetter === "w") {
+        return "Slughorn";
+    } else if (lastLetter === "x") {
+        return "Travers";
+    } else if (lastLetter === "y") {
+        return "Yaxley";
+    } else  
+        return "Wesley";
 }
 //generate Suffix//
 
@@ -57,9 +108,8 @@ function genSuffix(wizardHouse) {
         return `of the Slytherin house.`; 
     } else if (wizardHouse === "wisdomAndCreativity") {
         return `of the Ravenclaw house.`; 
-    } else (wizardHouse === "loyaltyAndHardWork") {
+    } else (wizardHouse === "loyaltyAndHardWork") 
         return `of the Hufflepuff house.`; 
-    }
 }
 
 //Generate

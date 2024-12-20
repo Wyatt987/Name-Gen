@@ -32,11 +32,26 @@
 .result-container h4 {
     color: #007bff;
 }
+/*Wand Background */
+
+#result {
+    background-image: url('imgs/wand.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    background-color: transparent; 
+}
 
 /* Animation */
 
 body {
     animation: fadeIn 1s ease-in-out;
+    background-image: url('imgs/hogwarts-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center; 
+    background-color: transparent; 
+    
 }
 
 @keyframes fadeIn {
